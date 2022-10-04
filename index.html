@@ -1,565 +1,850 @@
 <!DOCTYPE html>
-<html>
+<html class="scroll-behavior" lang="ru">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
     <title>Главная</title>
-  <link href="/css/main.css" rel="stylesheet">
-<style>
-  * {
-    color: green !important;
-  }
-</style>
-</head>
+    <meta name="description" content="Негосударственный Пенсионный Фонд Открытие">
+    <meta property="og:image" content="/img/fund.jpg">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="theme-color" content="#85AEB6">
+    <link rel="manifest" href="/manifest.webmanifest">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="preload" href="/fonts/graphiklc-regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/graphiklc-medium.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/druktextcy-medium.woff2" as="font" crossorigin="anonymous">
+    <style>@font-face{font-display:swap;font-family:GraphikLC;font-style:normal;font-weight:400;src:url(/fonts/graphiklc-regular.woff2) format("woff2"),url(/fonts/graphiklc-regular.woff) format("woff")}@font-face{font-display:swap;font-family:GraphikLC;font-style:normal;font-weight:500;src:url(/fonts/graphiklc-medium.woff2) format("woff2"),url(/fonts/graphiklc-medium.woff) format("woff")}@font-face{font-display:swap;font-family:DruktextCy;font-style:normal;font-weight:500;src:url(/fonts/druktextcy-medium.woff2) format("woff2"),url(/fonts/druktextcy-medium.woff) format("woff")}@font-face{font-display:swap;font-family:Punctuation;font-style:normal;font-weight:500;src:url(/fonts/punctuation-medium.woff2) format("woff2"),url(/fonts/punctuation-medium.woff) format("woff")}
+
+    </style>
+  <link href="/css/vendors.css" rel="stylesheet"><link href="/css/index.css" rel="stylesheet"></head>
   <body>
-    <div class="menu-mobile">
-      <button class="menu-mobile__btn-close">
-      </button>
-      <button class="button button_mobile-menu mt-20 mb-20">Оставить заявку
-<svg class="button__arrow" fill="currentColor " version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px"
-	 viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
-<g>
-	<g>
-		<g>
-			<path d="M15,18c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4l5-5c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-5,5C15.5,17.9,15.3,18,15,18z
-				"/>
-		</g>
-	</g>
-	<g>
-		<g>
-			<path d="M20,13c-0.3,0-0.5-0.1-0.7-0.3l-5-5c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l5,5c0.4,0.4,0.4,1,0,1.4C20.5,12.9,20.3,13,20,13z
-				"/>
-		</g>
-	</g>
-	<g>
-		<g>
-			<path d="M20,13H4c-0.6,0-1-0.4-1-1s0.4-1,1-1h16c0.6,0,1,0.4,1,1S20.6,13,20,13z"/>
-		</g>
-	</g>
-</g>
-</svg>
-
-      </button>
+    <div class="header-ipo2-wrap" id="header-burger">
+      <header class="header">
+        <div class="header-ipo2__inner">
+          <a class="logo" href="index.html" aria-label="главная страница">
+            <svg class="logo-icon" width="40" height="40">
+              <use href="#icon-logo"></use>
+            </svg>
+            <svg class="logo-text" width="236" height="40">
+              <use href="#icon-logo-text"></use>
+            </svg>
+          </a>
+          <div class="header-ipo2__menu-wrap">
+            <nav class="header-ipo2__nav">
+              <div class="nav-select">
+                <div class="nav-select__icon-wrapper">
+                  <svg class="arrow-down" width="24" height="24">
+                    <use href="#icon-doc"></use>
+                  </svg>
+                  <p class="nav-select__title">Библиотека</p>
+                  <svg class="arrow-down" width="30" height="30">
+                    <use href="#icon-arrow-domn"></use>
+                  </svg>
+                </div>
+                <div class="nav-select__item-wrapper nav-select_hidden">
+                  <div class="nav-select__item">
+                    <svg width="22" height="21">
+                      <use href="#icon-download"></use>
+                    </svg><a class="icon" href="#" data-modal-close="header-burger">Инструкция по выписке с ИЛС</a>
+                  </div>
+                  <div class="nav-select__item">
+                    <svg width="22" height="21">
+                      <use href="#icon-download"></use>
+                    </svg><a class="icon" href="#">Справочник «Социальные льготы и налоговые вычеты»</a>
+                  </div>
+                  <div class="nav-select__item">
+                    <svg width="22" height="21">
+                      <use href="#icon-download"></use>
+                    </svg><a class="icon" href="#">Таблица по формированию семейного бюджета</a>
+                  </div>
+                </div>
+              </div>
+            </nav>
+            <div class="header-ipo2__contact"><a class="header-ipo2__phone" href="tel:88002005999">8 (800) 100-2-333</a><small class="header-ipo2__phone-text">бесплатно по России</small></div>
+          </div>
+          <div class="header-ipo2__right">
+            <div class="header-ipo2__phone-wrap"><a class="header-ipo2__phone" href="tel:88002005999">8 (800) 100-2-333</a><small class="header-ipo2__phone-text">бесплатно по России</small></div>
+          </div>
+          <button class="button" data-modal-open="popup-form" aria-expanded="false">Участвовать в программе  
+          </button>
+          <button class="header-ipo2__burger ml-sm" type="button" aria-label="открыть меню" aria-expanded="false" data-modal-open="header-burger">
+            <svg class="header-ipo2__icon-burger" width="24" height="24">
+              <use href="#icon-burger"></use>
+            </svg>
+            <svg class="header-ipo2__icon-close" width="24" height="24">
+              <use href="#icon-close"></use>
+            </svg>
+          </button>
+          <div class="nav-select-burger">
+            <div class="nav-select-burger__icon-wrapper">
+              <svg width="22" height="24">
+                <use href="#icon-downolad-burger"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="img-wrap">
+        <picture>
+          <source type="image/webp" srcset="/img/main-banner.webp 1x, /img/main-banner@2x.webp 2x"/><img class="content-img" src="/img/main-banner.jpg" srcset="/img/main-banner@2x.jpg 2x" width="1920" height="900" alt="" loading="eager" decoding="async"/>
+        </picture>
+      </div>
+      <div class="slogan">
+        <div class="slogan__wrap">
+          <h1 class="slogan__title">А на что планируете жить на пенсии Вы?</h1>
+          <p class="slogan__text">
+             Большинство россиян рассчитывают <br> не на пенсию, а на подработку в старости<span class="tooltip-asterisk" data-tippy-content="По данным исследования НПФ «Открытие» в январе 2022 г.">*</span>
+          </p>
+        </div>
+      </div>
     </div>
-    <header class="header container">
-      <div class="operating-mode">
-        <span class="operating-mode__item operating-mode__item_address">г. Новосибирск, ул. Степная, дом 5, офис 102
-        </span>
-        <span class="operating-mode__item operating-mode__item_work-hours">пн-сб: с 9:00 до 17:00
-        </span>
-        <a class="operating-mode__item operating-mode__item_email" href="mailto:info@expertnost.ru">info@expertnost.ru
-        </a>
-        <div class="socials">
-          <span class="socials__icon socials__icon_vk"><svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M17.3703 4.81796C17.6489 4.44666 17.8701 4.14874 18.0334 3.92398C19.2098 2.31152 19.7197 1.28148 19.5634 0.832398L19.5021 0.727223C19.4613 0.66405 19.3557 0.606036 19.1859 0.553525C19.0158 0.501051 18.7983 0.492666 18.5332 0.527307L15.5956 0.548668C15.5276 0.541687 15.4595 0.543319 15.3915 0.553525C15.3235 0.564187 15.2794 0.574886 15.2589 0.585092L15.208 0.611349L15.1672 0.642916C15.1332 0.663822 15.0959 0.700739 15.0551 0.753478C15.0143 0.80618 14.98 0.867266 14.953 0.93761C14.6334 1.78584 14.2697 2.57465 13.8616 3.30378C13.61 3.73848 13.3787 4.11558 13.1681 4.43414C12.9573 4.75342 12.7805 4.98821 12.6377 5.13865C12.4949 5.28935 12.3656 5.41054 12.2501 5.50137C12.1344 5.59285 12.0461 5.63117 11.9851 5.61724C11.9237 5.60332 11.8659 5.5894 11.8116 5.57498C11.7164 5.51207 11.6397 5.42636 11.5821 5.31747C11.5243 5.20907 11.4853 5.07225 11.4647 4.90739C11.4445 4.74276 11.4323 4.60067 11.4292 4.4813C11.4256 4.3622 11.4274 4.19408 11.4343 3.97649C11.4411 3.75912 11.4445 3.61217 11.4445 3.53484C11.4445 3.26872 11.4497 2.97941 11.4599 2.66734C11.47 2.3555 11.4785 2.10819 11.4853 1.92588C11.4921 1.74384 11.4954 1.55086 11.4954 1.34746C11.4954 1.14451 11.4835 0.984734 11.4595 0.868897C11.4357 0.753478 11.3999 0.641322 11.3526 0.532429C11.3048 0.423991 11.2352 0.339685 11.1433 0.280268C11.0515 0.220586 10.9377 0.173461 10.8017 0.138137C10.4411 0.0538306 9.98208 0.00879393 9.42465 0.00139526C8.15977 -0.0120741 7.34716 0.0719664 6.9868 0.254011C6.84401 0.331337 6.71472 0.436284 6.5992 0.569574C6.47669 0.723997 6.4598 0.808267 6.5483 0.821736C6.9564 0.884909 7.24518 1.03584 7.4152 1.27408L7.47648 1.40016C7.52399 1.49164 7.57154 1.65281 7.61927 1.88407C7.66682 2.11536 7.69744 2.37124 7.71116 2.65175C7.74517 3.16351 7.74517 3.60147 7.71116 3.96628C7.67716 4.33105 7.64496 4.61482 7.61434 4.81777C7.58368 5.02118 7.53775 5.18581 7.4767 5.31189C7.41542 5.43843 7.37468 5.51552 7.35419 5.5436C7.33369 5.57145 7.3168 5.58909 7.30329 5.59611C7.21478 5.63094 7.12311 5.64859 7.02787 5.64859C6.93259 5.64859 6.81703 5.59934 6.68101 5.5011C6.54495 5.40337 6.40375 5.26822 6.25779 5.09638C6.11139 4.92481 5.94674 4.68448 5.76296 4.37586C5.57939 4.06774 5.38883 3.70293 5.19176 3.28242L5.02869 2.97729C4.92668 2.78132 4.78723 2.49547 4.61044 2.12045C4.43364 1.74543 4.27709 1.38274 4.14129 1.0319C4.08679 0.884909 4.00524 0.772754 3.89649 0.695428L3.84559 0.66386C3.81159 0.635973 3.75708 0.606037 3.6823 0.574659C3.6073 0.543091 3.52939 0.520326 3.44762 0.506174L0.652788 0.527079C0.367207 0.527079 0.17352 0.593971 0.0715055 0.727223L0.0307291 0.790168C0.0101202 0.825454 0 0.881646 0 0.958516C0 1.03584 0.0204985 1.13036 0.0612747 1.24228C0.469368 2.23101 0.913086 3.18445 1.39235 4.10257C1.87188 5.02118 2.28833 5.76097 2.64192 6.32175C2.99551 6.88299 3.35587 7.41193 3.72322 7.90977C4.09058 8.4076 4.33358 8.72639 4.45249 8.86644C4.57139 9.00693 4.66487 9.11215 4.73291 9.182L4.98788 9.43462C5.15094 9.60277 5.39082 9.80428 5.70706 10.0393C6.02325 10.2743 6.37328 10.5056 6.75774 10.7331C7.14177 10.9612 7.58905 11.1467 8.09894 11.2907C8.60887 11.4346 9.10525 11.4924 9.58812 11.4641H10.7611C10.9992 11.4432 11.1793 11.3663 11.3017 11.2328L11.3424 11.1803C11.3694 11.1385 11.3951 11.0735 11.419 10.9859C11.4426 10.8984 11.4548 10.8018 11.4548 10.6969C11.4478 10.3955 11.4702 10.1233 11.5211 9.88183C11.572 9.63988 11.6298 9.45784 11.6945 9.33479C11.7591 9.21239 11.8321 9.10884 11.9138 9.02454C11.9954 8.94023 12.053 8.88985 12.0872 8.8722C12.1213 8.85502 12.1486 8.84272 12.1688 8.83529C12.3319 8.77928 12.524 8.83365 12.7452 8.99828C12.9661 9.16341 13.1736 9.36632 13.3675 9.60827C13.5611 9.85023 13.794 10.1217 14.0661 10.4233C14.338 10.7247 14.576 10.949 14.7801 11.0962L14.9841 11.2228C15.1201 11.3066 15.2967 11.3837 15.5145 11.4541C15.7321 11.524 15.9226 11.5416 16.0857 11.5065L18.6969 11.4643C18.9553 11.4643 19.156 11.4206 19.2988 11.3328C19.4415 11.2458 19.5265 11.1487 19.5538 11.0438C19.5808 10.9386 19.5826 10.8199 19.5589 10.6864C19.5351 10.5533 19.5112 10.4604 19.4876 10.408C19.4637 10.3555 19.4416 10.3114 19.4211 10.2765C19.081 9.64565 18.4317 8.87076 17.4729 7.95242L17.4524 7.93151L17.4423 7.92085L17.4321 7.9106H17.4219C16.9865 7.48288 16.7113 7.1954 16.5957 7.04796C16.385 6.76795 16.3372 6.48395 16.453 6.1965C16.5341 5.97853 16.8399 5.51924 17.3703 4.81796Z" fill="currentColor"/>
-</svg>
-
-          </span>
-          <span class="socials__icon socials__icon_fb"><svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M19.0137 9.21924C19.0137 4.14866 14.865 0 9.79444 0C4.72385 0 0.575195 4.14866 0.575195 9.21924C0.575195 13.8289 3.91717 17.6318 8.29631 18.3232V11.8698H5.9915V9.21924H8.29631V7.14491C8.29631 4.8401 9.6792 3.57246 11.7535 3.57246C12.7907 3.57246 13.8279 3.80294 13.8279 3.80294V6.10775H12.6754C11.523 6.10775 11.1773 6.79919 11.1773 7.49063V9.21924H13.7126L13.2517 11.8698H11.0621V18.4385C15.6717 17.747 19.0137 13.8289 19.0137 9.21924Z" fill="currentColor"/>
-</svg>
-
-          </span>
-          <span class="socials__icon socials__icon_inst"><svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M6.64483 0H14.4812C15.5184 0.11524 16.2098 0.230482 16.786 0.460963C17.4774 0.806685 17.9384 1.03717 18.5146 1.61337C19.0908 2.18957 19.4365 2.76577 19.667 3.34198C19.8975 3.91818 20.128 4.60962 20.128 5.64679V13.4831C20.0127 14.5203 19.8975 15.2118 19.667 15.788C19.3213 16.4794 19.0908 16.9404 18.5146 17.5166C17.9384 18.0928 17.3622 18.4385 16.786 18.669C16.2098 18.8994 15.5184 19.1299 14.4812 19.1299H6.64483C5.60767 19.0147 4.91623 18.8994 4.34002 18.669C3.64858 18.3232 3.18762 18.0928 2.61141 17.5166C2.03521 16.9404 1.68949 16.3642 1.45901 15.788C1.22853 15.2118 0.998047 14.5203 0.998047 13.4831V5.64679C1.11329 4.60962 1.22853 3.91818 1.45901 3.34198C1.80473 2.65053 2.03521 2.18957 2.61141 1.61337C3.18762 1.03717 3.76382 0.691444 4.34002 0.460963C4.91623 0.230482 5.60767 0 6.64483 0ZM14.4812 1.72861H6.64483C5.72291 1.84385 5.26195 1.95909 4.91623 2.07433C4.45526 2.18957 4.10954 2.42005 3.76382 2.76577C3.49025 3.03934 3.361 3.3129 3.20477 3.64357C3.1636 3.73071 3.12044 3.82206 3.07238 3.91818C3.05455 3.97166 3.03396 4.0279 3.0119 4.08818C2.89134 4.41755 2.72665 4.86748 2.72665 5.64679V13.4831C2.8419 14.4051 2.95714 14.866 3.07238 15.2118C3.18762 15.6727 3.4181 16.0184 3.76382 16.3642C4.03739 16.6377 4.31095 16.767 4.64162 16.9232C4.72883 16.9644 4.82002 17.0075 4.91623 17.0556C4.96971 17.0734 5.02595 17.094 5.08623 17.1161C5.4156 17.2366 5.86553 17.4013 6.64483 17.4013H14.4812C15.4031 17.2861 15.8641 17.1708 16.2098 17.0556C16.6708 16.9404 17.0165 16.7099 17.3622 16.3642C17.6358 16.0906 17.765 15.817 17.9212 15.4864C17.9624 15.3992 18.0056 15.3079 18.0536 15.2118C18.0715 15.1583 18.0921 15.102 18.1141 15.0417C18.2347 14.7124 18.3994 14.2624 18.3994 13.4831V5.64679C18.2841 4.72486 18.1689 4.2639 18.0536 3.91818C17.9384 3.45722 17.7079 3.1115 17.3622 2.76577C17.0886 2.49221 16.8151 2.36295 16.4844 2.20673C16.3973 2.16558 16.3058 2.12235 16.2098 2.07433C16.1563 2.0565 16.1001 2.03592 16.0398 2.01385C15.7104 1.89329 15.2605 1.72861 14.4812 1.72861ZM5.60767 9.56496C5.60767 6.79919 7.79724 4.60962 10.563 4.60962C13.3288 4.60962 15.5184 6.79919 15.5184 9.56496C15.5184 12.3307 13.3288 14.5203 10.563 14.5203C7.79724 14.5203 5.60767 12.3307 5.60767 9.56496ZM15.6336 5.64679C16.27 5.64679 16.786 5.13084 16.786 4.49438C16.786 3.85792 16.27 3.34198 15.6336 3.34198C14.9971 3.34198 14.4812 3.85792 14.4812 4.49438C14.4812 5.13084 14.9971 5.64679 15.6336 5.64679ZM7.33628 9.56496C7.33628 11.4088 8.8344 12.7917 10.563 12.7917C12.2916 12.7917 13.7897 11.2936 13.7897 9.56496C13.7897 7.72112 12.2916 6.33823 10.563 6.33823C8.71916 6.33823 7.33628 7.83636 7.33628 9.56496Z" fill="currentColor"/>
-</svg>
-
-          </span>
-          <span class="socials__icon socials__icon_twit"><svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M18.5508 1.72861C17.8593 2.07433 17.1679 2.18957 16.3612 2.30481C17.1679 1.84385 17.7441 1.15241 17.9746 0.230481C17.2831 0.691442 16.4765 0.921924 15.5545 1.15241C14.8631 0.460962 13.8259 0 12.7888 0C10.3687 0 8.52486 2.30481 9.10106 4.60962C5.98957 4.49438 3.2238 2.99625 1.26471 0.691443C0.227546 2.42005 0.803748 4.60962 2.41711 5.76202C1.84091 5.76202 1.26471 5.53154 0.688507 5.30106C0.688507 7.02967 1.95615 8.64304 3.68476 9.104C3.10856 9.21924 2.53236 9.33448 1.95615 9.21924C2.41711 10.7174 3.8 11.8698 5.52861 11.8698C4.14572 12.9069 2.07139 13.4831 0.112305 13.2527C1.84091 14.2898 3.8 14.9813 5.87433 14.9813C12.904 14.9813 16.8222 9.104 16.5917 3.6877C17.3984 3.22673 18.0898 2.53529 18.5508 1.72861Z" fill="currentColor"/>
-</svg>
-
-          </span>
-        </div>
-      </div>
-      <div class="navigation">
-        <div class="navigation__background">
-        </div>
-        <a class="logo" href="/">
-          <img class="logo__images" src="/images/header/logo.svg" alt="Экспертность"/>
-        </a>
-        <nav class="menu">
-          <a class="menu__link" href="/services.html">Услуги и цены
-          </a>
-          <a class="menu__link" href="/partners.html">Партнерам
-          </a>
-          <a class="menu__link" href="/licenses.html">Лицензии
-          </a>
-          <a class="menu__link" href="/faq.html">Вопросы и ответы
-          </a>
-          <a class="menu__link" href="/about.html">О компании
-          </a>
-          <a class="menu__link" href="/contacts.html">Контакты
-          </a>
-        </nav>
-        <button class="btn-menu">
-        </button>
-        <div class="telephone">
-          <a class="telephone__number" href="tel:+73832775842">+7 (383) 277-58-42
-          </a>
-          <a class="telephone__call-order" href="#">Заказать звонок
-          </a>
-        </div>
-      </div>
-    </header>
-    <!--<div style="background: rgba(31, 42, 56, 0.75);width: 100%;height: 100%;position: absolute;z-index: -1;filter: blur(8px);"></div>-->
     <main>
-      <div class="full-screen-bg_usp">
-        <div class="usp container">
-          <h1 class="usp__heading">Экспертизы и<br> проектирование
-          </h1>
-          <p class="usp__descript">Экспертность. Выезд экспертов в любое<br> удобное для вас время. Решение любых<br> нестандартных задач.
-          </p>
-          <button class="button">Оставить заявку
-<svg class="button__arrow" fill="currentColor " version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px"
-	 viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
-<g>
-	<g>
-		<g>
-			<path d="M15,18c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4l5-5c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-5,5C15.5,17.9,15.3,18,15,18z
-				"/>
-		</g>
-	</g>
-	<g>
-		<g>
-			<path d="M20,13c-0.3,0-0.5-0.1-0.7-0.3l-5-5c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l5,5c0.4,0.4,0.4,1,0,1.4C20.5,12.9,20.3,13,20,13z
-				"/>
-		</g>
-	</g>
-	<g>
-		<g>
-			<path d="M20,13H4c-0.6,0-1-0.4-1-1s0.4-1,1-1h16c0.6,0,1,0.4,1,1S20.6,13,20,13z"/>
-		</g>
-	</g>
-</g>
-</svg>
-
-          </button>
-          <div class="usp__wrap-list-license">
-            <div class="list-license">
-              <p class="list-license__title">Обновление допуска (лицензии)
-                <a class="list-license__link" href="https://sro-pp.ru/">СРО-П-207-14032019
-                </a>
-              </p>
-              <p class="list-license__descript">Ассоциация организаций, выполняющих инженерные изыскания «ИНЖГЕОСТРОЙ».<br> Регистрационный номер в реестре № 301
-              </p>
+            <section class="pension-insurance mb-2xl">
+              <div class="pension-insurance__container container">
+                <div class="pension-insurance__sum">
+                  <strong class="pension-insurance__value js-insurance-value title-banner-l">19 360
+                  </strong>
+                  <span class="title-banner-l">рубля<span class="tooltip-asterisk" data-tippy-content="По данным Минтруда, для неработающего пенсионера">*</span>
+                  </span>
+                </div>
+                <p class="pension-insurance__text text-m">Составляет в 2022 году средний размер <br> страховой пенсии по старости в России
+                </p>
+              </div>
+            </section>
+      <section class="calculator-expense">
+        <div class="container">
+          <div class="calculator-expense__header">
+            <h2 class="title-banner-l mb-xs">Попробуйте представить, что Вы вышли на пенсию
+            </h2>
+            <p class="text-m mb-m">Укажите, сколько примерно Вам может потребоваться денег в месяц по основным статьям расходов
+            </p>
+          </div>
+          <div class="calculator-expense__form" data-ajax="https://jsonplaceholder.typicode.com/posts">
+            <div class="calculator-expense__left">
+              <div class="calculator-expense__item text-s">
+                      <div class="range range-top" data-min="0" data-max="30000" data-step="500" data-value="0">
+                        <div class="range__inner">
+                          <label class="calculator-expense__title" for="range-service-jkh">
+                            <svg width="24" height="24">
+                              <use href="#icon-b12"></use>
+                            </svg><span>Услуги ЖКХ</span>
+                          </label>
+                          <div class="range-slider">
+                            <div class="track">
+                              <div class="active-track">
+                              </div>
+                            </div>
+                            <span class="thumb">
+                            </span>
+                            <input class="visually-hidden" id="range-service-jkh" type="range" name="service-jkh"/>
+                          </div>
+                        </div>
+                        <div class="calculator-expense__output">
+                          <label class="calculator-expense__output-value">
+                            <input class="calculator-expense__text-field output-js" type="text" size="7" data-type="service-jkh"/>
+                            <span class="calculator-expense__text-field js-output-value" data-sign="₽">
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="range range-top" data-min="0" data-max="100000" data-step="500" data-value="0">
+                        <div class="range__inner">
+                          <label class="calculator-expense__title" for="range-medications">
+                            <svg width="24" height="24">
+                              <use href="#icon-e16"></use>
+                            </svg><span>Лекарства</span>
+                          </label>
+                          <div class="range-slider">
+                            <div class="track">
+                              <div class="active-track">
+                              </div>
+                            </div>
+                            <span class="thumb">
+                            </span>
+                            <input class="visually-hidden" id="range-medications" type="range" name="medications"/>
+                          </div>
+                        </div>
+                        <div class="calculator-expense__output">
+                          <label class="calculator-expense__output-value">
+                            <input class="calculator-expense__text-field output-js" type="text" size="7" data-type="medications"/>
+                            <span class="calculator-expense__text-field js-output-value" data-sign="₽">
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="range range-top" data-min="0" data-max="100000" data-step="500" data-value="0">
+                        <div class="range__inner">
+                          <label class="calculator-expense__title" for="range-nutrition">
+                            <svg width="24" height="24">
+                              <use href="#icon-mrkt01"></use>
+                            </svg><span>Питание</span>
+                          </label>
+                          <div class="range-slider">
+                            <div class="track">
+                              <div class="active-track">
+                              </div>
+                            </div>
+                            <span class="thumb">
+                            </span>
+                            <input class="visually-hidden" id="range-nutrition" type="range" name="nutrition"/>
+                          </div>
+                        </div>
+                        <div class="calculator-expense__output">
+                          <label class="calculator-expense__output-value">
+                            <input class="calculator-expense__text-field output-js" type="text" size="7" data-type="nutrition"/>
+                            <span class="calculator-expense__text-field js-output-value" data-sign="₽">
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="range range-top" data-min="0" data-max="100000" data-step="500" data-value="0">
+                        <div class="range__inner">
+                          <label class="calculator-expense__title" for="range-clothes">
+                            <svg width="24" height="24">
+                              <use href="#icon-mrkt05"></use>
+                            </svg><span>Одежда/обувь</span>
+                          </label>
+                          <div class="range-slider">
+                            <div class="track">
+                              <div class="active-track">
+                              </div>
+                            </div>
+                            <span class="thumb">
+                            </span>
+                            <input class="visually-hidden" id="range-clothes" type="range" name="clothes"/>
+                          </div>
+                        </div>
+                        <div class="calculator-expense__output">
+                          <label class="calculator-expense__output-value">
+                            <input class="calculator-expense__text-field output-js" type="text" size="7" data-type="clothes"/>
+                            <span class="calculator-expense__text-field js-output-value" data-sign="₽">
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="range range-top" data-min="0" data-max="10000" data-step="500" data-value="0">
+                        <div class="range__inner">
+                          <label class="calculator-expense__title" for="range-internet">
+                            <svg width="24" height="24">
+                              <use href="#icon-m12"></use>
+                            </svg><span>Услуги связи/интернет</span>
+                          </label>
+                          <div class="range-slider">
+                            <div class="track">
+                              <div class="active-track">
+                              </div>
+                            </div>
+                            <span class="thumb">
+                            </span>
+                            <input class="visually-hidden" id="range-internet" type="range" name="internet"/>
+                          </div>
+                        </div>
+                        <div class="calculator-expense__output">
+                          <label class="calculator-expense__output-value">
+                            <input class="calculator-expense__text-field output-js" type="text" size="7" data-type="internet"/>
+                            <span class="calculator-expense__text-field js-output-value" data-sign="₽">
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="range range-top" data-min="0" data-max="100000" data-step="500" data-value="0">
+                        <div class="range__inner">
+                          <label class="calculator-expense__title" for="range-travels">
+                            <svg width="24" height="24">
+                              <use href="#icon-t05"></use>
+                            </svg><span>Путешествия</span>
+                          </label>
+                          <div class="range-slider">
+                            <div class="track">
+                              <div class="active-track">
+                              </div>
+                            </div>
+                            <span class="thumb">
+                            </span>
+                            <input class="visually-hidden" id="range-travels" type="range" name="travels"/>
+                          </div>
+                        </div>
+                        <div class="calculator-expense__output">
+                          <label class="calculator-expense__output-value">
+                            <input class="calculator-expense__text-field output-js" type="text" size="7" data-type="travels"/>
+                            <span class="calculator-expense__text-field js-output-value" data-sign="₽">
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="range range-top" data-min="0" data-max="10000" data-step="500" data-value="0">
+                        <div class="range__inner">
+                          <label class="calculator-expense__title" for="range-travels">
+                            <svg width="24" height="24">
+                              <use href="#icon-t05"></use>
+                            </svg><span>Транспорт</span>
+                          </label>
+                          <div class="range-slider">
+                            <div class="track">
+                              <div class="active-track">
+                              </div>
+                            </div>
+                            <span class="thumb">
+                            </span>
+                            <input class="visually-hidden" id="range-travels" type="range" name="travels"/>
+                          </div>
+                        </div>
+                        <div class="calculator-expense__output">
+                          <label class="calculator-expense__output-value">
+                            <input class="calculator-expense__text-field output-js" type="text" size="7" data-type="travels"/>
+                            <span class="calculator-expense__text-field js-output-value" data-sign="₽">
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="range range-top" data-min="0" data-max="10000" data-step="500" data-value="0">
+                        <div class="range__inner">
+                          <label class="calculator-expense__title" for="range-travels">
+                            <svg width="24" height="24">
+                              <use href="#icon-t05"></use>
+                            </svg><span>Хобби/досуг</span>
+                          </label>
+                          <div class="range-slider">
+                            <div class="track">
+                              <div class="active-track">
+                              </div>
+                            </div>
+                            <span class="thumb">
+                            </span>
+                            <input class="visually-hidden" id="range-travels" type="range" name="travels"/>
+                          </div>
+                        </div>
+                        <div class="calculator-expense__output">
+                          <label class="calculator-expense__output-value">
+                            <input class="calculator-expense__text-field output-js" type="text" size="7" data-type="travels"/>
+                            <span class="calculator-expense__text-field js-output-value" data-sign="₽">
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+              </div>
             </div>
-            <div class="list-license">
-              <p class="list-license__title">Обновление допуска (лицензии)
-                <a class="list-license__link" href="https://sro-pp.ru/">СРО-И-050-23102020
-                </a>
-              </p>
-              <p class="list-license__descript">Ассоциация проектных организаций строительного комплекса «Партнерство<br> проектировщиков». Регистрационный номер в реестре № 111
-              </p>
+            <div class="calculator-expense__result js-calc-view">
+              <div class="calculator-expense__result-list dl">
+                <div class="calculator-expense__result-item">
+                  <dt class="term text-s">На пенсии Вам необходимо:
+                  </dt>
+                  <dd class="calculator-expense__output-value definition little-numbers js-accum-output" data-sign="₽">37 467
+                  </dd>
+                </div>
+                <div class="calculator-expense__result-item calculator-expense__result-item_big">
+                  <dt class="term text-s">Вам не хватает:
+                  </dt>
+                  <dd class="calculator-expense__output-value definition big-numbers js-sum-output" data-sign="₽">81 065
+                  </dd>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="full-screen-bg_indicators">
-        <div class="indicators container">
-          <div class="block-card-wrap">
-            <div class="block-card block-card_indicators">
-              <h3 class="heading heading_h3 heading_dark2">Строительно-техническая экспертиза
-              </h3>
-              <p class="paragraph">Проведение экспертиз для судов.<br> Обследование зданий и сооружений
+      </section>
+            <section class="preview">
+              <div class="preview__wrapper">
+                <div class="preview__inner">
+                  <img class="preview__logo" src="/img/goznak-logo.png" data-aos="fade-up" data-aos-easing="ease" data-aos-once="true" data-aos-delay="1000" data-aos-duration="1000"/>
+                  <h1 class="preview__description" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="1000" data-aos-once="true" data-aos-duration="1000">АО «Гознак»  усиливает социальную поддержку своих работников при выходе на пенсию
+                  </h1>
+                </div>
+              </div>
+            </section>
+            <section class="parity-program">
+              <div class="parity-program__wrapper">
+                <div class="parity-program__inner">
+                  <div class="parity-program__title">
+                    <h2 class="parity-program__sub-title" data-aos="fade-up" data-aos-easing="ease" data-aos-once="true" data-aos-duration="1000">
+                      Дополнение к действующей корпоративной программе
+                      Пенсионная программа –
+                      «Паритетная»
+                    </h2>
+                  </div>
+                  <div class="parity-program__text" data-aos="fade-up" data-aos-easing="ease" data-aos-once="true" data-aos-delay="250" data-aos-duration="1000">
+                    <div class="left-lined-block">
+                      <div class="left-lined-block__wrapper">
+                        <div class="left-lined-block__inner">
+                          <div class="left-lined-block__title">100%  софинансирование 
+                          </div>
+                          <div class="left-lined-block__text">от работодателя
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="left-lined-block">
+                      <div class="left-lined-block__wrapper">
+                        <div class="left-lined-block__inner">
+                          <div class="left-lined-block__title">«Паритетная» программа
+                          </div>
+                          <div class="left-lined-block__text">основана на принципе долевого участия, при котором работники и работодатель совместно участвуют в формировании средств для выплаты будущей дополнительной негосударственной пенсии
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="how-it-work">
+              <div class="how-it-work__wrapper">
+                <div class="how-it-work__inner">
+                  <h2 class="how-it-work__title" data-aos="fade-up" data-aos-easing="ease" data-aos-once="true" data-aos-duration="1000">
+                     Как работает программа:<br>Вы делаете взносы, а АО «Гознак» удваивает их!
+                  </h2>
+                  <div class="how-it-work__content">
+                    <div class="how-it-work__icon-item-list">
+                      <div class="how-it-work__icon-item" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="250" data-aos-once="true" data-aos-duration="1000">
+                        <div class="rounded-icon-item rounded-icon-item_icon-bordered">
+                          <div class="rounded-icon-item__icon">
+                            <svg>
+                              <use xlink:href="#manlonely"></use>
+                            </svg>
+                          </div>
+                          <div class="rounded-icon-item__text">Ваш <br> взнос
+                          </div>
+                          <div class="rounded-icon-item__plus-icon">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="how-it-work__icon-item" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000">
+                        <div class="rounded-icon-item rounded-icon-item_icon-bordered">
+                          <div class="rounded-icon-item__icon">
+                            <svg>
+                              <use xlink:href="#factory"></use>
+                            </svg>
+                          </div>
+                          <div class="rounded-icon-item__text">Взнос <br> работодателя
+                          </div>
+                          <div class="rounded-icon-item__plus-icon">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="how-it-work__icon-item" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="750" data-aos-once="true" data-aos-duration="1000">
+                        <div class="rounded-icon-item rounded-icon-item_icon-bordered">
+                          <div class="rounded-icon-item__icon">
+                            <svg>
+                              <use xlink:href="#percenticon"></use>
+                            </svg>
+                          </div>
+                          <div class="rounded-icon-item__text">Инвестиционный <br>  доход фонда<span class="tooltip js-tooltip" data-tooltip-content="#tooltip22">*</span><span class="tooltip_templates"><span id="tooltip22">В случае положительного результата размещения пенсионных резервов. Возможно увеличение или уменьшение дохода от размещения пенсионных резервов, результаты размещения в прошлом не определяют доходов в будущем.</span></span>
+                          </div>
+                          <div class="rounded-icon-item__equal-icon">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="how-it-work__icon-item" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="1000" data-aos-once="true" data-aos-duration="1000">
+                        <div class="rounded-icon-item rounded-icon-item_icon-bordered">
+                          <div class="rounded-icon-item__icon">
+                            <svg>
+                              <use xlink:href="#meshok"></use>
+                            </svg>
+                          </div>
+                          <div class="rounded-icon-item__text">Дополнительная<br> негосударственная<br> пенсия
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="tax-deduction">
+              <div class="tax-deduction__wrapper">
+                <div class="tax-deduction__inner">
+                  <div class="white-numeric-list">
+                    <div class="white-numeric-block" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="null" data-aos-once="true" data-aos-duration="1000">
+                      <div class="white-numeric-block__wrapper">
+                        <div class="white-numeric-block__text">Вы заключаете индивидуальный договор негосударственного пенсионного обеспечения и определяете размер своего ежемесячного взноса (5% от должностного оклада или установленной тарифной ставки, но не менее 1 000 рублей)
+
+                        </div>
+                        <div class="white-numeric-block__num">01
+                        </div>
+                      </div>
+                    </div>
+                    <div class="white-numeric-block" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="null" data-aos-once="true" data-aos-duration="1000">
+                      <div class="white-numeric-block__wrapper">
+                        <div class="white-numeric-block__text">АО  «Гознак» ведет учет Ваших пенсионных взносов 
+и перечисляет свою долю равную Вашим взносам, 
+но не более 10 000 рублей 
+в месяц
+
+                        </div>
+                        <div class="white-numeric-block__num">02
+                        </div>
+                      </div>
+                    </div>
+                    <div class="white-numeric-block" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="null" data-aos-once="true" data-aos-duration="1000">
+                      <div class="white-numeric-block__wrapper">
+                        <div class="white-numeric-block__text">НПФ «Открытие» ежегодно начисляет  инвестиционный доход<span class="tooltip js-tooltip" data-tooltip-content="#tooltip1">* на все средства 
+на именном пенсионном счете
+<span class="tooltip_templates"><span id="tooltip1">В случае положительного результата размещения пенсионных резервов. Возможно увеличение или уменьшение дохода от размещения пенсионных резервов, результаты размещения в прошлом не определяют доходов в будущем.</span></span>
+                        </div>
+                        <div class="white-numeric-block__num">03
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="features">
+              <div class="features__wrapper">
+                <h2 class="features__title" data-aos="fade-up" data-aos-easing="ease" data-aos-once="true" data-aos-duration="1000">Подумайте о будущем уже сейчас
+                </h2>
+                <div class="features__inner">
+                  <div class="features__part features__part_left">
+                    <div class="features__list">
+                      <div class="features__list-item" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="250" data-aos-once="true" data-aos-duration="1000">
+                        <div class="features__item-icon-wrapper">
+                          <svg class="features__item-icon">
+                            <use xlink:href="#two-part-heads"></use>
+                          </svg>
+                        </div>
+                        <div class="features__item-text">Ваши накопленные средства могут быть унаследованы родными и близкими<span class="tooltip js-tooltip" data-tooltip-content="#tooltip014">*</span><span class="tooltip_templates"><span id="tooltip014">В соответствии с пенсионными правилами АО «НПФ «Открытие» и условиями пенсионного договора.</span></span>
+                        </div>
+                      </div>
+                      <div class="features__list-item" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="250" data-aos-once="true" data-aos-duration="1000">
+                        <div class="features__item-icon-wrapper">
+                          <svg class="features__item-icon">
+                            <use xlink:href="#smile-with-hole"></use>
+                          </svg>
+                        </div>
+                        <div class="features__item-text">Вы можете в любой момент выйти из программы и забрать личные накопления, включая начисленный на них инвестиционный доход<span class="tooltip js-tooltip" data-tooltip-content="#tooltip024">*</span><span class="tooltip_templates"><span id="tooltip024">Для приостановки взносов - подать заявление в бухгалтерию работодателя. Для возврата средств учтенных на именном пенсионном счете - подать заявление о расторжении договора и получить выкупную сумму.</span></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="features__part features__part_right">
+                    <div class="features__video-wrapper" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="750" data-aos-once="true" data-aos-duration="1000">
+                      <iframe class="features__video-frame" src="https://www.youtube.com/embed/R11CwjcLbSM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen">
+                      </iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+      <div id="calculator"></div>
+            <section class="container bfnum3-petrol mb-xl">
+              <p class="title-s mb-sm">Кроме этого:
+                <ul class="op-cards-container">
+                  <li class="op-bfnum op-col-3">
+                    <svg class="op-bfnum__icon" width="56" height="56">
+                      <use href="#icon-s53"></use>
+                    </svg>
+                    <p>Средства, находящиеся на пенсионном счете, защищены от любого судебного преследования, ареста, ограничения, не входят в совместно нажитое имущество</p>
+                  </li>
+                  <li class="op-bfnum op-col-3">
+                    <svg class="op-bfnum__icon" width="56" height="56">
+                      <use href="#icon-s14"></use>
+                    </svg>
+                    <p>Средства на пенсионном счете наследуются в полном объеме как на этапе накопления, так и на этапе выплат</p>
+                  </li>
+                  <li class="op-bfnum op-col-3">
+                    <svg class="op-bfnum__icon" width="56" height="56">
+                      <use href="#icon-f09"></use>
+                    </svg>
+                    <p>В Личном кабинете на сайте Фонда можно контролировать состояние пенсионного счета, пополнить счет и настроить автоплатеж</p>
+                  </li>
+                  <li class="op-bfnum op-col-3">
+                    <svg class="op-bfnum__icon" width="56" height="56">
+                      <use href="#icon-g13"></use>
+                    </svg>
+                    <p>Вы можете получить социальный налоговый вычет (СНВ) от суммы уплаченных пенсионных взносов.В рамках паритетной программы СНВ оформляется через работодателя, для этого необходимо подать вместе с заявлением на удержание взносов заявление на получение СНВ и копию индивидуального пенсионного договора.</p><a class="bfnum-link" href="https://open-npf.ru/personal/non-governmental/deduction/" target="_blank">Узнать подробнее
+                      <svg width="9" height="6">
+                        <use href="#icon-Vector"></use>
+                      </svg></a>
+                  </li>
+                </ul>
               </p>
-              <a class="block-card__link" href="/expertise.html">Заказать бесплатный осмотр
-              </a>
-              <img class="block-card__img" src="/images/block-card/bg-block-card1.jpg" alt=""/>
-              <div class="block-card__pixel-mask">
+            </section>
+            <section class="btn-block">
+              <button class="button button_block" data-modal-open="popup-form" aria-expanded="false">Учавствовать в программе  
+              </button>
+            </section>
+            <section class="program-info-block">
+              <h2 class="program-info-block__title" data-aos="fade-up" data-aos-easing="ease" data-aos-once="true" data-aos-duration="1000"><span class="tooltip js-tooltip" data-tooltip-content="#tooltip24">Ваша пенсия в одном из крупнейших <br class="hide-s">  фондов страны* </span><span class="tooltip_templates"><span id="tooltip24">Фонд входит в топ-5 НПФ по размеру активов по данным Банка России на 30.09.2021</span></span>
+              </h2>
+              <div class="program-info-block__wrapper">
+                <div class="program-info-block__inner">
+                  <div class="program-info-block__items-list">
+                    <div class="program-info-block__icon-item" data-aos="fade-up" data-aos-easing="ease" data-aos-once="true" data-aos-delay="250" data-aos-duration="1000">
+                      <div class="rounded-icon-item rounded-icon-item_icon-bordered rounded-icon-item_small">
+                        <div class="rounded-icon-item__icon">
+                          <svg>
+                            <use xlink:href="#peoples"></use>
+                          </svg>
+                        </div>
+                        <div class="rounded-icon-item__title">7,49 млн
+                        </div>
+                        <div class="rounded-icon-item__text">застрахованных лиц <br> и участников
+                        </div>
+                      </div>
+                    </div>
+                    <div class="program-info-block__icon-item" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000">
+                      <div class="rounded-icon-item rounded-icon-item_icon-bordered rounded-icon-item_small">
+                        <div class="rounded-icon-item__icon">
+                          <svg>
+                            <use xlink:href="#two-part-heads"></use>
+                          </svg>
+                        </div>
+                        <div class="rounded-icon-item__title">149,8 тыс.
+                        </div>
+                        <div class="rounded-icon-item__text">участников получают <br> негосударственные пенсии
+                        </div>
+                      </div>
+                    </div>
+                    <div class="program-info-block__icon-item" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="750" data-aos-once="true" data-aos-duration="1000">
+                      <div class="rounded-icon-item rounded-icon-item_icon-bordered rounded-icon-item_small">
+                        <div class="rounded-icon-item__icon">
+                          <svg>
+                            <use xlink:href="#clock_time"></use>
+                          </svg>
+                        </div>
+                        <div class="rounded-icon-item__title">25 лет
+                        </div>
+                        <div class="rounded-icon-item__text">безупречной <br> работы
+                        </div>
+                      </div>
+                    </div>
+                    <div class="program-info-block__icon-item" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="250" data-aos-once="true" data-aos-duration="1000">
+                      <div class="rounded-icon-item rounded-icon-item_icon-bordered rounded-icon-item_small">
+                        <div class="rounded-icon-item__icon">
+                          <svg>
+                            <use xlink:href="#gear"></use>
+                          </svg>
+                        </div>
+                        <div class="rounded-icon-item__title">619,3 млрд ₽
+                        </div>
+                        <div class="rounded-icon-item__text">совокупный объем активов <br> под управлением
+                        </div>
+                      </div>
+                    </div>
+                    <div class="program-info-block__icon-item" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000">
+                      <div class="rounded-icon-item rounded-icon-item_icon-bordered rounded-icon-item_small">
+                        <div class="rounded-icon-item__icon">
+                          <svg>
+                            <use xlink:href="#money"></use>
+                          </svg>
+                        </div>
+                        <div class="rounded-icon-item__title">3,07% годовых
+                        </div>
+                        <div class="rounded-icon-item__text">доходность, распределенная <br> на счета участников <br> по договорам  <br> НПО по итогам 2021 г.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="program-info-block__icon-item" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="750" data-aos-once="true" data-aos-duration="1000">
+                      <div class="rounded-icon-item rounded-icon-item_icon-bordered rounded-icon-item_small">
+                        <div class="rounded-icon-item__icon">
+                          <svg>
+                            <use xlink:href="#meshok"></use>
+                          </svg>
+                        </div>
+                        <div class="rounded-icon-item__title">92,7 млрд руб.
+                        </div>
+                        <div class="rounded-icon-item__text">общий размер пенсионных <br> выплат клиентам Фонда
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="program-info-block__description">В соответствии с внутренними данными Фонда на 31.12.2021
+                  </div>
+                  <div class="program-info-block__footer" data-aos="fade-up" data-aos-easing="ease" data-aos-once="true" data-aos-duration="1000">
+                    <section class="btn-block">
+                      <button class="button button_blue" data-modal-open="popup-form" aria-expanded="false">Участвовать в программе  
+                      </button>
+                    </section>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="block-card block-card_indicators">
-              <h3 class="heading heading_h3 heading_dark2">Проектирование
-              </h3>
-              <p class="paragraph">Перепланировка, переустройство,<br> реконструкция, капитальный ремонт и<br> новое строительство
-              </p>
-              <a class="block-card__link" href="/expertise.html">Заказать бесплатную консультацию
-              </a>
-              <img class="block-card__img" src="/images/block-card/bg-block-card2.jpg" alt=""/>
-              <div class="block-card__pixel-mask">
+            </section>
+            <section class="steps">
+              <div class="steps__wrapper">
+                <div class="steps__inner">
+                  <h2 class="steps__title" data-aos="fade-up" data-aos-easing="ease" data-aos-once="true" data-aos-duration="1000">Сделайте
+                    <span class="steps__highlight">2 шага,
+                    </span>станьте <br class="hide-s">участником программы
+                  </h2>
+                  <div class="steps__list">
+                    <div class="steps__step" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="250" data-aos-once="true" data-aos-duration="1000">
+                      <div class="steps__step-number">1
+                      </div>
+                      <p class="steps__step-description">Заключите индивидуальный договор негосударственного пенсионного обеспечения с АО «НПФ «Открытие» через отдел по работе с персоналом Вашего филиала или дирекции АО «Гознак»
+                      </p>
+                    </div>
+                    <div class="steps__step" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000">
+                      <div class="steps__step-number">2
+                      </div>
+                      <p class="steps__step-description">Подайте в бухгалтерию компании заявления о перечислении средств и оформлении социального налогового вычета*
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="indicators__wrap-indicator">
-            <div class="indicator">
-              <div class="indicator__number">1473
+            </section>
+            <section class="any-question-block">
+              <div class="any-question-block__wrapper">
+                <div class="any-question-block__inner">
+                  <h2 class="any-question-block__title" data-aos="fade-up" data-aos-easing="ease" data-aos-once="true" data-aos-duration="1000">Остались вопросы?
+                  </h2>
+                  <div class="any-question-block__text" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="250" data-aos-once="true" data-aos-duration="1000">Получите консультацию по бесплатной горячей линии
+                  </div>
+                  <div class="any-question-block__phone" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000"><a href="tel:88001002333">8 800 100-2-333</a>
+                  </div>
+                </div>
               </div>
-              <div class="indicator__description">экспертиз проведено за всё время
+            </section>
+            <footer class="footer">
+              <div class="footer__wrapper">
+                <div class="footer__inner">
+                  <div class="footer__item footer__item_copyright">© 1994-2022 АО «НПФ «Открытие»
+                  </div>
+                  <div class="footer__item footer__item_address">129110, г. Москва, ул. Гиляровского, д. 39, стр. 3
+                  </div>
+                  <a class="footer__item footer__item_site" href="https://open-npf.ru" target="_blank">open-npf.ru
+                  </a>
+                  <div class="footer__item footer__item_license">Лицензия на осуществление деятельности по пенсионному обеспечению и пенсионному страхованию №432 от 20.05.2014
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="indicator">
-              <div class="indicator__number">97%
-              </div>
-              <div class="indicator__description">клиентов, довольных результатом
-              </div>
-            </div>
-            <div class="indicator">
-              <div class="indicator__number">24/7
-              </div>
-              <div class="indicator__description">работаем в выходные и праздничные дни
-              </div>
-            </div>
-            <div class="indicator">
-              <div class="indicator__number">100+
-              </div>
-              <div class="indicator__description">согласованных проектов перепланировки
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="popular-examinations container">
-        <h2 class="heading heading_h2 heading_dark2">Популярные экспертизы
-        </h2>
-        <a class="popular-examinations__link" href="/services.html">Смотреть все услуги
-        </a>
-        <div class="block-card-wrap">
-          <div class="block-card">
-            <h3 class="heading heading_h3 heading_dark2">Судебная экспертиза
-            </h3>
-            <div class="price">
-              <span class="price__text">от
-              </span>
-              <span class="price__number">10 000₽
-              </span>
-            </div>
-            <a class="link-button" href="/card-service.html">Заказать
-<svg class="button__arrow" fill="currentColor " version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px"
-	 viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
-<g>
-	<g>
-		<g>
-			<path d="M15,18c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4l5-5c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-5,5C15.5,17.9,15.3,18,15,18z
-				"/>
-		</g>
-	</g>
-	<g>
-		<g>
-			<path d="M20,13c-0.3,0-0.5-0.1-0.7-0.3l-5-5c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l5,5c0.4,0.4,0.4,1,0,1.4C20.5,12.9,20.3,13,20,13z
-				"/>
-		</g>
-	</g>
-	<g>
-		<g>
-			<path d="M20,13H4c-0.6,0-1-0.4-1-1s0.4-1,1-1h16c0.6,0,1,0.4,1,1S20.6,13,20,13z"/>
-		</g>
-	</g>
-</g>
-</svg>
-
-            </a>
-            <img class="block-card__img" src="/images/block-card/bg-block-card3.jpg" alt=""/>
-            <div class="block-card__pixel-mask">
-            </div>
-          </div>
-          <div class="block-card">
-            <h3 class="heading heading_h3 heading_dark2">Проект перепланировки квартиры
-            </h3>
-            <div class="price">
-              <span class="price__text">от
-              </span>
-              <span class="price__number">5 000₽
-              </span>
-            </div>
-            <a class="link-button" href="/card-service.html">Заказать
-<svg class="button__arrow" fill="currentColor " version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px"
-	 viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
-<g>
-	<g>
-		<g>
-			<path d="M15,18c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4l5-5c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-5,5C15.5,17.9,15.3,18,15,18z
-				"/>
-		</g>
-	</g>
-	<g>
-		<g>
-			<path d="M20,13c-0.3,0-0.5-0.1-0.7-0.3l-5-5c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l5,5c0.4,0.4,0.4,1,0,1.4C20.5,12.9,20.3,13,20,13z
-				"/>
-		</g>
-	</g>
-	<g>
-		<g>
-			<path d="M20,13H4c-0.6,0-1-0.4-1-1s0.4-1,1-1h16c0.6,0,1,0.4,1,1S20.6,13,20,13z"/>
-		</g>
-	</g>
-</g>
-</svg>
-
-            </a>
-            <img class="block-card__img" src="/images/block-card/bg-block-card4.jpg" alt=""/>
-            <div class="block-card__pixel-mask">
-            </div>
-          </div>
-          <div class="block-card">
-            <h3 class="heading heading_h3 heading_dark2">Обследование нежилых зданий
-            </h3>
-            <div class="price">
-              <span class="price__text">от
-              </span>
-              <span class="price__number">5 000₽
-              </span>
-            </div>
-            <a class="link-button" href="/card-service.html">Заказать
-<svg class="button__arrow" fill="currentColor " version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px"
-	 viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
-<g>
-	<g>
-		<g>
-			<path d="M15,18c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4l5-5c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-5,5C15.5,17.9,15.3,18,15,18z
-				"/>
-		</g>
-	</g>
-	<g>
-		<g>
-			<path d="M20,13c-0.3,0-0.5-0.1-0.7-0.3l-5-5c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l5,5c0.4,0.4,0.4,1,0,1.4C20.5,12.9,20.3,13,20,13z
-				"/>
-		</g>
-	</g>
-	<g>
-		<g>
-			<path d="M20,13H4c-0.6,0-1-0.4-1-1s0.4-1,1-1h16c0.6,0,1,0.4,1,1S20.6,13,20,13z"/>
-		</g>
-	</g>
-</g>
-</svg>
-
-            </a>
-            <img class="block-card__img" src="/images/block-card/bg-block-card5.jpg" alt=""/>
-            <div class="block-card__pixel-mask">
-            </div>
-          </div>
-          <div class="block-card">
-            <h3 class="heading heading_h3 heading_dark2">Экспертиза технического состояния
-            </h3>
-            <div class="price">
-              <span class="price__text">от
-              </span>
-              <span class="price__number">6 000₽
-              </span>
-            </div>
-            <a class="link-button" href="/card-service.html">Заказать
-<svg class="button__arrow" fill="currentColor " version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px"
-	 viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
-<g>
-	<g>
-		<g>
-			<path d="M15,18c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4l5-5c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-5,5C15.5,17.9,15.3,18,15,18z
-				"/>
-		</g>
-	</g>
-	<g>
-		<g>
-			<path d="M20,13c-0.3,0-0.5-0.1-0.7-0.3l-5-5c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l5,5c0.4,0.4,0.4,1,0,1.4C20.5,12.9,20.3,13,20,13z
-				"/>
-		</g>
-	</g>
-	<g>
-		<g>
-			<path d="M20,13H4c-0.6,0-1-0.4-1-1s0.4-1,1-1h16c0.6,0,1,0.4,1,1S20.6,13,20,13z"/>
-		</g>
-	</g>
-</g>
-</svg>
-
-            </a>
-            <img class="block-card__img" src="/images/block-card/bg-block-card6.jpg" alt=""/>
-            <div class="block-card__pixel-mask">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="feedback-form container">
-        <h2 class="heading heading_h2">Остались вопросы?
-        </h2>
-        <p class="feedback-form__description">Оставьте заявку и с вами свяжется менеджер в<br> течение 20 минут
-        </p>
-        <form class="feedback-form__form" action="#">
-          <input class="feedback-form__input" type="text" placeholder="Введите ваше имя"/>
-          <input class="feedback-form__input" type="tel" placeholder="Введите ваш телефон"/>
-          <button class="button">Оставить заявку
-<svg class="button__arrow" fill="currentColor " version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px"
-	 viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
-<g>
-	<g>
-		<g>
-			<path d="M15,18c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4l5-5c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-5,5C15.5,17.9,15.3,18,15,18z
-				"/>
-		</g>
-	</g>
-	<g>
-		<g>
-			<path d="M20,13c-0.3,0-0.5-0.1-0.7-0.3l-5-5c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l5,5c0.4,0.4,0.4,1,0,1.4C20.5,12.9,20.3,13,20,13z
-				"/>
-		</g>
-	</g>
-	<g>
-		<g>
-			<path d="M20,13H4c-0.6,0-1-0.4-1-1s0.4-1,1-1h16c0.6,0,1,0.4,1,1S20.6,13,20,13z"/>
-		</g>
-	</g>
-</g>
-</svg>
-
-          </button>
-          <p class="feedback-form__signed-button">Нажимая на кнопку, вы подтверждаете согласие<br> на <a href='/consent-processing.html' class='feedback-form__signed-link'>обработку персональных данных</a>
-          </p>
-        </form>
-        <img class="feedback-form__img" src="/images/index/bg-feedback-form.png"/>
-        <img class="feedback-form__img feedback-form__img_mini" src="/images/index/bg-feedback-form-mini.jpg"/>
-      </div>
-      <div class="full-screen-bg_trust-us">
-        <div class="trust-us2 container">
-          <h2 class="heading heading_h2">Нам доверяют
-          </h2>
-          <div class="slider" data-slider-name="trust-us2" data-slide-num="4" data-slide-639="3" data-slide-479="2">
-            <div class="slider__slide">
-              <img class="slider__image" src="/images/trust-us/trust-slide1.jpg" alt=""/>
-            </div>
-            <div class="slider__slide">
-              <img class="slider__image" src="/images/trust-us/trust-slide2.jpg" alt=""/>
-            </div>
-            <div class="slider__slide">
-              <img class="slider__image" src="/images/trust-us/trust-slide3.jpg" alt=""/>
-            </div>
-            <div class="slider__slide">
-              <img class="slider__image" src="/images/trust-us/trust-slide4.jpg" alt=""/>
-            </div>
-            <div class="slider__slide">
-              <img class="slider__image" src="/images/trust-us/trust-slide1.jpg" alt=""/>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="acknowledgments container">
-        <h2 class="heading heading_h2 heading_dark2">Благодарности
-        </h2>
-        <div class="slider" data-slider-name="acknowledgments" data-slide-num="4" data-slide-639="3" data-slide-479="2">
-          <div class="slider__slide">
-            <img class="slider__image" src="/images/acknowledgments/acknowledgments1.jpg" alt=""/>
-          </div>
-          <div class="slider__slide">
-            <img class="slider__image" src="/images/acknowledgments/acknowledgments2.jpg" alt=""/>
-          </div>
-          <div class="slider__slide">
-            <img class="slider__image" src="/images/acknowledgments/acknowledgments3.jpg" alt=""/>
-          </div>
-          <div class="slider__slide">
-            <img class="slider__image" src="/images/acknowledgments/acknowledgments4.jpg" alt=""/>
-          </div>
-          <div class="slider__slide">
-            <img class="slider__image" src="/images/acknowledgments/acknowledgments1.jpg" alt=""/>
-          </div>
-        </div>
-      </div>
+            </footer>
     </main>
-    <div class="full-screen-bg_footer">
-      <footer class="footer">
-        <nav class="footer__menu container">
-          <div class="footer-links-list">
-            <a class="footer-links-list__link-heading" href="/about.html">
-              <h3 class="heading heading_h3">О компании
-              </h3>
-            </a>
-            <a class="footer-links-list__link" href="/licenses.html">Лицензии
-            </a>
-            <a class="footer-links-list__link" href="/about.html">Отзывы
-            </a>
-            <a class="footer-links-list__link" href="/contacts.html">Реквизиты
-            </a>
-            <a class="footer-links-list__link" href="/partners.html">Партнерам
-            </a>
-            <a class="footer-links-list__link" href="/faq.html">Вопросы и ответы
-            </a>
-            <a class="footer-links-list__link footer-links-list__link_last footer-links-list__link_position" href="#">Политика конфеденциальности
-            </a>
-          </div>
-          <div class="footer-links-list">
-            <a class="footer-links-list__link-heading" href="/services.html">
-              <h3 class="heading heading_h3">Услуги
-              </h3>
-            </a>
-            <a class="footer-links-list__link" href="/card-service.html">Судебная экспертиза
-            </a>
-            <a class="footer-links-list__link" href="/card-service.html">Строительно-техническая экспертиза
-            </a>
-            <a class="footer-links-list__link" href="/card-service.html">Обследование нежилых зданий
-            </a>
-            <a class="footer-links-list__link" href="/card-service.html">Обследование жилых зданий
-            </a>
-            <a class="footer-links-list__link" href="/card-service.html">Проект перепланировки квартиры
-            </a>
-            <a class="footer-links-list__link footer-links-list__link_last" href="#">Согласие на обработку персональных данных
-            </a>
-          </div>
-          <div class="footer-links-list">
-            <a class="footer-links-list__link-heading" href="/contacts.html">
-              <h3 class="heading heading_h3">Контакты
-              </h3>
-            </a>
-            <span class="footer-links-list__text">г. Новосибирск, ул. Степная, дом 5, офис 106
-            </span>
-            <span class="footer-links-list__text">пн-сб: с 9:00 до 17:00
-            </span>
-            <a class="footer-links-list__link" href="email:info@expertnost.ru">info@expertnost.ru
-            </a>
-            <a class="footer-links-list__telephone" href="tel:+73832775842">+7 (383) 277-58-42
-            </a>
-            <a class="footer-links-list__modal-link" href="#">Заказать звонок
-            </a>
-            <div class="socials">
-              <span class="socials__icon socials__icon_vk"><svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M17.3703 4.81796C17.6489 4.44666 17.8701 4.14874 18.0334 3.92398C19.2098 2.31152 19.7197 1.28148 19.5634 0.832398L19.5021 0.727223C19.4613 0.66405 19.3557 0.606036 19.1859 0.553525C19.0158 0.501051 18.7983 0.492666 18.5332 0.527307L15.5956 0.548668C15.5276 0.541687 15.4595 0.543319 15.3915 0.553525C15.3235 0.564187 15.2794 0.574886 15.2589 0.585092L15.208 0.611349L15.1672 0.642916C15.1332 0.663822 15.0959 0.700739 15.0551 0.753478C15.0143 0.80618 14.98 0.867266 14.953 0.93761C14.6334 1.78584 14.2697 2.57465 13.8616 3.30378C13.61 3.73848 13.3787 4.11558 13.1681 4.43414C12.9573 4.75342 12.7805 4.98821 12.6377 5.13865C12.4949 5.28935 12.3656 5.41054 12.2501 5.50137C12.1344 5.59285 12.0461 5.63117 11.9851 5.61724C11.9237 5.60332 11.8659 5.5894 11.8116 5.57498C11.7164 5.51207 11.6397 5.42636 11.5821 5.31747C11.5243 5.20907 11.4853 5.07225 11.4647 4.90739C11.4445 4.74276 11.4323 4.60067 11.4292 4.4813C11.4256 4.3622 11.4274 4.19408 11.4343 3.97649C11.4411 3.75912 11.4445 3.61217 11.4445 3.53484C11.4445 3.26872 11.4497 2.97941 11.4599 2.66734C11.47 2.3555 11.4785 2.10819 11.4853 1.92588C11.4921 1.74384 11.4954 1.55086 11.4954 1.34746C11.4954 1.14451 11.4835 0.984734 11.4595 0.868897C11.4357 0.753478 11.3999 0.641322 11.3526 0.532429C11.3048 0.423991 11.2352 0.339685 11.1433 0.280268C11.0515 0.220586 10.9377 0.173461 10.8017 0.138137C10.4411 0.0538306 9.98208 0.00879393 9.42465 0.00139526C8.15977 -0.0120741 7.34716 0.0719664 6.9868 0.254011C6.84401 0.331337 6.71472 0.436284 6.5992 0.569574C6.47669 0.723997 6.4598 0.808267 6.5483 0.821736C6.9564 0.884909 7.24518 1.03584 7.4152 1.27408L7.47648 1.40016C7.52399 1.49164 7.57154 1.65281 7.61927 1.88407C7.66682 2.11536 7.69744 2.37124 7.71116 2.65175C7.74517 3.16351 7.74517 3.60147 7.71116 3.96628C7.67716 4.33105 7.64496 4.61482 7.61434 4.81777C7.58368 5.02118 7.53775 5.18581 7.4767 5.31189C7.41542 5.43843 7.37468 5.51552 7.35419 5.5436C7.33369 5.57145 7.3168 5.58909 7.30329 5.59611C7.21478 5.63094 7.12311 5.64859 7.02787 5.64859C6.93259 5.64859 6.81703 5.59934 6.68101 5.5011C6.54495 5.40337 6.40375 5.26822 6.25779 5.09638C6.11139 4.92481 5.94674 4.68448 5.76296 4.37586C5.57939 4.06774 5.38883 3.70293 5.19176 3.28242L5.02869 2.97729C4.92668 2.78132 4.78723 2.49547 4.61044 2.12045C4.43364 1.74543 4.27709 1.38274 4.14129 1.0319C4.08679 0.884909 4.00524 0.772754 3.89649 0.695428L3.84559 0.66386C3.81159 0.635973 3.75708 0.606037 3.6823 0.574659C3.6073 0.543091 3.52939 0.520326 3.44762 0.506174L0.652788 0.527079C0.367207 0.527079 0.17352 0.593971 0.0715055 0.727223L0.0307291 0.790168C0.0101202 0.825454 0 0.881646 0 0.958516C0 1.03584 0.0204985 1.13036 0.0612747 1.24228C0.469368 2.23101 0.913086 3.18445 1.39235 4.10257C1.87188 5.02118 2.28833 5.76097 2.64192 6.32175C2.99551 6.88299 3.35587 7.41193 3.72322 7.90977C4.09058 8.4076 4.33358 8.72639 4.45249 8.86644C4.57139 9.00693 4.66487 9.11215 4.73291 9.182L4.98788 9.43462C5.15094 9.60277 5.39082 9.80428 5.70706 10.0393C6.02325 10.2743 6.37328 10.5056 6.75774 10.7331C7.14177 10.9612 7.58905 11.1467 8.09894 11.2907C8.60887 11.4346 9.10525 11.4924 9.58812 11.4641H10.7611C10.9992 11.4432 11.1793 11.3663 11.3017 11.2328L11.3424 11.1803C11.3694 11.1385 11.3951 11.0735 11.419 10.9859C11.4426 10.8984 11.4548 10.8018 11.4548 10.6969C11.4478 10.3955 11.4702 10.1233 11.5211 9.88183C11.572 9.63988 11.6298 9.45784 11.6945 9.33479C11.7591 9.21239 11.8321 9.10884 11.9138 9.02454C11.9954 8.94023 12.053 8.88985 12.0872 8.8722C12.1213 8.85502 12.1486 8.84272 12.1688 8.83529C12.3319 8.77928 12.524 8.83365 12.7452 8.99828C12.9661 9.16341 13.1736 9.36632 13.3675 9.60827C13.5611 9.85023 13.794 10.1217 14.0661 10.4233C14.338 10.7247 14.576 10.949 14.7801 11.0962L14.9841 11.2228C15.1201 11.3066 15.2967 11.3837 15.5145 11.4541C15.7321 11.524 15.9226 11.5416 16.0857 11.5065L18.6969 11.4643C18.9553 11.4643 19.156 11.4206 19.2988 11.3328C19.4415 11.2458 19.5265 11.1487 19.5538 11.0438C19.5808 10.9386 19.5826 10.8199 19.5589 10.6864C19.5351 10.5533 19.5112 10.4604 19.4876 10.408C19.4637 10.3555 19.4416 10.3114 19.4211 10.2765C19.081 9.64565 18.4317 8.87076 17.4729 7.95242L17.4524 7.93151L17.4423 7.92085L17.4321 7.9106H17.4219C16.9865 7.48288 16.7113 7.1954 16.5957 7.04796C16.385 6.76795 16.3372 6.48395 16.453 6.1965C16.5341 5.97853 16.8399 5.51924 17.3703 4.81796Z" fill="currentColor"/>
-</svg>
-
-              </span>
-              <span class="socials__icon socials__icon_fb"><svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M19.0137 9.21924C19.0137 4.14866 14.865 0 9.79444 0C4.72385 0 0.575195 4.14866 0.575195 9.21924C0.575195 13.8289 3.91717 17.6318 8.29631 18.3232V11.8698H5.9915V9.21924H8.29631V7.14491C8.29631 4.8401 9.6792 3.57246 11.7535 3.57246C12.7907 3.57246 13.8279 3.80294 13.8279 3.80294V6.10775H12.6754C11.523 6.10775 11.1773 6.79919 11.1773 7.49063V9.21924H13.7126L13.2517 11.8698H11.0621V18.4385C15.6717 17.747 19.0137 13.8289 19.0137 9.21924Z" fill="currentColor"/>
-</svg>
-
-              </span>
-              <span class="socials__icon socials__icon_inst"><svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M6.64483 0H14.4812C15.5184 0.11524 16.2098 0.230482 16.786 0.460963C17.4774 0.806685 17.9384 1.03717 18.5146 1.61337C19.0908 2.18957 19.4365 2.76577 19.667 3.34198C19.8975 3.91818 20.128 4.60962 20.128 5.64679V13.4831C20.0127 14.5203 19.8975 15.2118 19.667 15.788C19.3213 16.4794 19.0908 16.9404 18.5146 17.5166C17.9384 18.0928 17.3622 18.4385 16.786 18.669C16.2098 18.8994 15.5184 19.1299 14.4812 19.1299H6.64483C5.60767 19.0147 4.91623 18.8994 4.34002 18.669C3.64858 18.3232 3.18762 18.0928 2.61141 17.5166C2.03521 16.9404 1.68949 16.3642 1.45901 15.788C1.22853 15.2118 0.998047 14.5203 0.998047 13.4831V5.64679C1.11329 4.60962 1.22853 3.91818 1.45901 3.34198C1.80473 2.65053 2.03521 2.18957 2.61141 1.61337C3.18762 1.03717 3.76382 0.691444 4.34002 0.460963C4.91623 0.230482 5.60767 0 6.64483 0ZM14.4812 1.72861H6.64483C5.72291 1.84385 5.26195 1.95909 4.91623 2.07433C4.45526 2.18957 4.10954 2.42005 3.76382 2.76577C3.49025 3.03934 3.361 3.3129 3.20477 3.64357C3.1636 3.73071 3.12044 3.82206 3.07238 3.91818C3.05455 3.97166 3.03396 4.0279 3.0119 4.08818C2.89134 4.41755 2.72665 4.86748 2.72665 5.64679V13.4831C2.8419 14.4051 2.95714 14.866 3.07238 15.2118C3.18762 15.6727 3.4181 16.0184 3.76382 16.3642C4.03739 16.6377 4.31095 16.767 4.64162 16.9232C4.72883 16.9644 4.82002 17.0075 4.91623 17.0556C4.96971 17.0734 5.02595 17.094 5.08623 17.1161C5.4156 17.2366 5.86553 17.4013 6.64483 17.4013H14.4812C15.4031 17.2861 15.8641 17.1708 16.2098 17.0556C16.6708 16.9404 17.0165 16.7099 17.3622 16.3642C17.6358 16.0906 17.765 15.817 17.9212 15.4864C17.9624 15.3992 18.0056 15.3079 18.0536 15.2118C18.0715 15.1583 18.0921 15.102 18.1141 15.0417C18.2347 14.7124 18.3994 14.2624 18.3994 13.4831V5.64679C18.2841 4.72486 18.1689 4.2639 18.0536 3.91818C17.9384 3.45722 17.7079 3.1115 17.3622 2.76577C17.0886 2.49221 16.8151 2.36295 16.4844 2.20673C16.3973 2.16558 16.3058 2.12235 16.2098 2.07433C16.1563 2.0565 16.1001 2.03592 16.0398 2.01385C15.7104 1.89329 15.2605 1.72861 14.4812 1.72861ZM5.60767 9.56496C5.60767 6.79919 7.79724 4.60962 10.563 4.60962C13.3288 4.60962 15.5184 6.79919 15.5184 9.56496C15.5184 12.3307 13.3288 14.5203 10.563 14.5203C7.79724 14.5203 5.60767 12.3307 5.60767 9.56496ZM15.6336 5.64679C16.27 5.64679 16.786 5.13084 16.786 4.49438C16.786 3.85792 16.27 3.34198 15.6336 3.34198C14.9971 3.34198 14.4812 3.85792 14.4812 4.49438C14.4812 5.13084 14.9971 5.64679 15.6336 5.64679ZM7.33628 9.56496C7.33628 11.4088 8.8344 12.7917 10.563 12.7917C12.2916 12.7917 13.7897 11.2936 13.7897 9.56496C13.7897 7.72112 12.2916 6.33823 10.563 6.33823C8.71916 6.33823 7.33628 7.83636 7.33628 9.56496Z" fill="currentColor"/>
-</svg>
-
-              </span>
-              <span class="socials__icon socials__icon_twit"><svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M18.5508 1.72861C17.8593 2.07433 17.1679 2.18957 16.3612 2.30481C17.1679 1.84385 17.7441 1.15241 17.9746 0.230481C17.2831 0.691442 16.4765 0.921924 15.5545 1.15241C14.8631 0.460962 13.8259 0 12.7888 0C10.3687 0 8.52486 2.30481 9.10106 4.60962C5.98957 4.49438 3.2238 2.99625 1.26471 0.691443C0.227546 2.42005 0.803748 4.60962 2.41711 5.76202C1.84091 5.76202 1.26471 5.53154 0.688507 5.30106C0.688507 7.02967 1.95615 8.64304 3.68476 9.104C3.10856 9.21924 2.53236 9.33448 1.95615 9.21924C2.41711 10.7174 3.8 11.8698 5.52861 11.8698C4.14572 12.9069 2.07139 13.4831 0.112305 13.2527C1.84091 14.2898 3.8 14.9813 5.87433 14.9813C12.904 14.9813 16.8222 9.104 16.5917 3.6877C17.3984 3.22673 18.0898 2.53529 18.5508 1.72861Z" fill="currentColor"/>
-</svg>
-
-              </span>
-            </div>
-          </div>
-        </nav>
-        <hr class="footer__hr"/>
-        <div class="copyright-block container">
-          <span class="copyright-block__item">&copy; ООО "Экспертность" 2018-2021 Все права защищены
-          </span>
-          <span class="copyright-block__item">Изображения взяты с сервиса <a class='copyright-block__freepik' target='_blank' href='https://www.freepik.com'>freepik.com</a>
-          </span>
-          <span class="copyright-block__item">Разработка сайта
-            <a class="copyright-block__link" href="https://vk.com/exocornet">by Exocornet
-            </a>
-          </span>
-        </div>
-      </footer>
+    <div id="spinner">
+      <div class="swiper-lazy-preloader"></div>
     </div>
-    <div class="full-screen-bg_cookies">
-      <div class="cookies container">
-        <p class="cookies__text">Мы используем файлы cookie. Они помогают улучшить ваше взаимодействие с сайтом.
-        </p>
-        <button class="cookies__btn">Я согласен
-        </button>
+    <div class="modal scale-down popup" id="popup-universal">
+      <div class="modal-wrap popup__wrap">
+        <div class="modal-body popup__body">
+          <div class="op-banner-m mb-l">
+            <div class="popup__ban-content">
+              <div class="mb-l">
+                <div class="js-tag">
+                  <p class="op-banner-tag"></p>
+                </div>
+                <h2 class="js-ban-title title-banner-s"></h2>
+              </div>
+            </div>
+            <div class="op-banner-m__bg"><img class="content-img" src="/img/non-governmental@2x.jpg" alt=""/></div>
+          </div>
+          <div class="js-html popup-container mb-xl"></div>
+          <button class="modal-close popup__btn-close" type="button" data-modal-close="data-modal-close" aria-label="закрыть окно">
+            <svg width="24" height="24">
+              <use href="#icon-close"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
-  <script defer src="/js/main.js"></script></body>
+    <!--include only-email-->
+          <div class="modal scale-up popup" id="popup-form">
+            <div class="modal-wrap popup__wrap">
+              <div class="modal-body popup__body popup__body--question modal-body--petrol">
+                <form class="form-petrol js-question-form" method="post" action="https://jsonplaceholder.typicode.com/posts">
+                  <div class="form-container">
+                    <div class="form-header mb-m">
+                      <h2 class="title-banner-l mb-2xs">Задайте свой вопрос</h2>
+                      <p class="text-s">Пожалуйста, укажите Ваши контактные данные, и специалист Фонда свяжется с Вами</p>
+                    </div>
+                    <label class="op-form-item op-inp-wrap">
+                      <input class="op-text-input" type="text" name="full-name" data-validate data-required><span class="op-form-label">Ваше имя</span><span data-error="data-error"></span>
+                    </label>
+                    <label class="op-form-item op-inp-wrap">
+                      <input class="op-text-input" type="text" name="phone" data-validate="phone" data-required><span class="op-form-label">Ваш телефон</span><span data-error="data-error"></span>
+                    </label>
+                    <label class="op-form-item op-inp-wrap">
+                      <input class="op-text-input" type="text" name="email" data-validate="email" data-required><span class="op-form-label">Ваш E-mail</span><span data-error="data-error"></span>
+                    </label>
+                    <label class="op-form-item op-inp-wrap">
+                      <div class="select">
+                        <div class="select__label">
+                          <input class="select__current op-text-input" type="text" name="branch" data-validate="branch" data-required="data-required" disabled="disabled"/><span class="op-form-label">Выберите подразделение АО «Госсзнак»</span>
+                          <svg class="select__icon" width="30" height="30">
+                            <use href="#icon-arrow-gray"></use>
+                          </svg>
+                        </div>
+                        <div class="select__list">
+                          <div class="select__item"> <span>Дирекция - АО «Гознак»</span>
+                            <svg class="select__arrow" width="30" height="30">
+                              <use href="#icon-arrow-green"></use>
+                            </svg>
+                          </div>
+                          <div class="select__item"> <span>Московская печатная фабрика – филиал АО «Гознак»</span>
+                            <svg class="select__arrow" width="30" height="30">
+                              <use href="#icon-arrow-green"></use>
+                            </svg>
+                          </div>
+                          <div class="select__item"> <span>Московская типография Гознака – филиал АО «Гознак»</span>
+                            <svg class="select__arrow" width="30" height="30">
+                              <use href="#icon-arrow-green"></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div><span data-error="data-error"></span>
+                    </label>
+                    <label class="op-chb op-form-item">
+                      <input class="visually-hidden" type="checkbox" name="agreement" data-validate="bool" checked><span class="op-custom-chb">
+                        <svg width="15" height="15">
+                          <use href="#icon-arrow-white"></use>
+                        </svg></span><span class="op-chb-label">
+                         Я даю <span class="border">согласие на обработку</span><span class="tooltip-asterisk" data-tippy-content="Настоящим даю согласие АО «НПФ «Открытие» (далее - Фонд) на осуществление автоматизированной и неавтоматизированной обработки моих персональных данных (ФИО, контактный телефон, адрес электронной почты), включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (предоставление, доступ), блокирование, удаление, уничтожение, с целью предоставления информации и консультаций по вопросам, связанным с основными видами деятельности Фонда.">*</span>персональных данных</span>
+                    </label>
+                    <button class="op-form-submit btn btn--white" type="submit">Участвовать в программе</button>
+                  </div>
+                </form>
+                <button class="modal-close" type="button" data-modal-close aria-label="закрыть окно">
+                  <svg width="24" height="24">
+                    <use href="#icon-close"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+    <div class="modal scale-up popup" id="popup-response">
+      <div class="modal-wrap popup__wrap">
+        <div class="modal-body popup__body modal-body--petrol">
+          <div class="js-html"></div>
+          <button class="modal-close" type="button" data-modal-close="data-modal-close" aria-label="закрыть окно">
+            <svg width="24" height="24">
+              <use href="#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script>
+      const isMacBrowser = /Mac|iPod|iPhone|iPad/.test(navigator.userAgent);
+
+if (isMacBrowser) {
+  const syncHeight = function() {
+    document.documentElement.style.setProperty('--100vh', window.innerHeight + 'px');
+  };
+  window.addEventListener('resize', syncHeight);
+  syncHeight();
+}
+      window.formErrorMessages = {
+  errorMessages: {
+    required: 'Обязательно для заполнения',
+    phone: 'Неправильный номер',
+    email: 'Некорректный email',
+    passwordCyrillic: 'пароль содержит кириллицу',
+    notCyrillic: 'Вы ввели латинские символы',
+    snilsShort: 'СНИЛС должен состоять из 11 цифр',
+    snilsInvalid: 'Некорректный СНИЛС',
+    captcha: 'Неправильный код',
+    invalidDate: 'Дата незаполненна',
+  },
+  statusMessages: {
+    success: 'Ваш вопрос отправлен',
+    fail: 'Сервер не найден',
+    error: 'Ошибка связи, попробуйте еще раз',
+  },
+};
+
+    </script>
+  <script defer src="/js/runtime.js"></script><script defer src="/js/vendors.js"></script><script defer src="/js/index.js"></script></body>
 </html>
